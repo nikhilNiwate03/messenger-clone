@@ -49,7 +49,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
     }
 
     return seenArray.filter((user) => user.email === userEmail).length !== 0;
-  }, []);
+  }, [lastMessage]);
 
   const lastMessageText = useMemo(() => {
     if (lastMessage?.image) {
